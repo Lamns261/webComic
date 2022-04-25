@@ -1,0 +1,312 @@
+.edit-view-footer {
+    min-height: 100vh;
+}
+
+
+/* ReadRankingComic */
+.ranking-block p {
+    padding: 0;
+    margin: 0;
+}
+.ranking-block {
+    box-shadow: 0 10px 25px 0 #d7d4ce;
+    min-height: 590px;
+    width: 30%;
+}
+.book-cover {
+    transform: perspective(70px) rotateY(-10deg);
+}
+.book-cover-link {
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+}
+.book-cover img {
+    width: 70px;
+    height: 105px;
+    outline: 1px solid transparent;
+}
+.bold{
+    font-weight: bold;
+}
+
+
+/* Chapter of Comic */
+.chapter-content{
+    font-size: 26px;
+    line-height: 1.6;
+}
+.menu-chapter {
+    width: 60%;
+}
+
+
+/* Chapter content */
+.author-card {
+    background-color: #f7f5f0;
+    min-height: 500px;
+    border-radius: 10px;
+}
+
+.newUpdate-chapter li {
+    list-style: none;
+    padding: 8px 0;
+}
+
+
+/* Comic page */
+.wishlish-item {
+    margin-bottom: 8px;
+}
+.favorite-btn {
+    font-size: 25px;
+    position: relative;
+    top: 2px;
+    padding-left: 10px;
+    color: #ffb2b2;
+}
+.favorite-btn:hover {
+    color: #ffb2b2;
+}
+.wishlish-img img {
+    width: 100%;
+}
+.wishlish-item:hover .wishlish-chapter > button {
+    display: block;
+    border: none;
+    padding: 0 10px;
+    margin-right: 8px;
+}
+.wishlish-content a {
+    text-decoration: none;
+    color: #000;
+}
+.wishlish-chapter {
+    color: #8e969c;
+    font-style: italic;
+    display: flex;
+    justify-content:space-between;
+}
+.wishlish-chapter > button {
+    display:none;
+}
+
+
+/* Viewed Comic */
+.viewed-comic {
+    margin-bottom: 30px;
+}
+.viewed-item {
+    margin-bottom: 8px;
+}
+.viewed-img img {
+    width: 100%;
+}
+.viewed-item:hover .viewed-chapter button {
+    display: block;
+    border: none;
+    padding: 0 10px;
+    margin-right: 8px;
+}
+.viewed-content a {
+    text-decoration: none;
+    color: #000;
+}
+.viewed-content p {
+    margin-bottom: 0;
+}
+.viewed-chapter {
+    display: flex;
+    justify-content:space-between;
+}
+.viewed-chapter span {
+    color: #8e969c;
+    font-style: italic;
+}
+.viewed-chapter button {
+    display:none;
+}
+
+
+
+
+/* Rating form */
+.rating-form {
+    border: 2px solid #f7f5f0;
+    border-radius: 10px;
+}
+.rating-table {
+    background-color: #f7f5f0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.rating-table > hr {
+    margin: 0;
+    opacity: 0.15;
+}
+.rating-table-total {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+.star {
+    font-size: 30px;
+}
+.star-yellow {
+    color:#ffc000;
+}
+.star-gray {
+    color:#ccc;
+}
+.rating-table-point,
+.rating-table-title {
+    position: relative;
+    top: -3px;
+    display: inline-block;
+}
+.rating-table-title {
+    min-width: 90px;
+}
+.rating-table-warning {
+    font-size: 18px;
+    font-weight: 600;
+}
+.rating-table > ol li {
+    margin-bottom: 10px;
+}
+
+
+.comments {
+    width: 80%;
+}
+
+/* Dropdown Chapters */
+.dropdown-chapters {
+    position: relative;
+}
+.dropdown-chapters .btn {
+    /* border-color: #f7f5f0;
+    background-color: #f7f5f0; */
+    /* width: 100%; */
+}
+.dropdown-chapters .btn::before,
+.theme-color .btn::before {
+    display: none;
+}
+.dropdown-chapters-menu {
+    height: 500px;
+    overflow: scroll;
+    min-width: 800px;
+    box-shadow: 0 0 10px #ccc;
+}
+.dropdown-chapters-menu a {
+    color: #666;
+    text-decoration: none;
+}
+.dropdown-chapters-item {
+    display: inline-block;
+    width: 49%;
+    padding: 5px 16px;
+}
+.dropdown-chapters-tooltip {
+    position: absolute;
+    top: 6px;
+    left: 130%;
+    min-width: 150px;
+    font-size: 10px;
+    padding: 0 5px;
+    border-radius: 6px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: none;
+}
+.dropdown-chapters-tooltip::after {
+    content: " ";
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #000;
+    border-left: 10px solid transparent;
+    position: absolute;
+    top: 2px;
+    left: -19px;
+    display: none;
+}
+.dropdown-chapters:hover .dropdown-chapters-tooltip,
+.dropdown-chapters:hover .dropdown-chapters-tooltip::after {
+    display: block;
+}
+
+
+
+.chapter-page {
+    /* position: relative; */
+}
+.chapter-content {
+    position: relative;
+    box-shadow: 0px 5px 25px #666;
+    padding: 30px 50px;
+}
+.edit-bar {
+    position: absolute;
+    top: 0;
+    left: 102%;
+}
+
+.theme-color-menu {
+    min-width: 300px;
+    padding: 10px 10px 5px 10px;
+    box-shadow: 0 0 10px #ccc;
+}
+.btn-changeColor {
+    border-radius: 50%;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.btn-white {
+    background-color: #fff;
+    border: 1px solid #e6d19f;
+}
+.btn-pink {
+    background-color: #f5e4e4;
+    border: 1px solid #f5e4e4;
+
+}
+.btn-yellow {
+    background-color: #f5ebcd;
+    border: 1px solid #f5ebcd;
+}
+.btn-black {
+    background-color: #000;
+    border: 1px solid #000;
+}
+.btn-green {
+    background-color: #e2eee2;
+    border: 1px solid #e2eee2;
+}
+.btn-gray {
+    background-color: #e5e3df;
+    border: 1px solid #e5e3df;
+}
+
+.theme-pink{
+    background-color: #f5e4e4;
+}
+.theme-yellow {
+    background-color: #f5ebcd;
+}
+.theme-black {
+    background-color: #000;
+}
+.theme-white {
+    background-color: #fff;
+}
+.theme-green {
+    background-color: #e2eee2;
+}
+.theme-gray {
+    background-color: #e5e3df;
+}
